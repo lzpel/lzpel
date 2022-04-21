@@ -1,12 +1,12 @@
-### Hi there 👋
+ Hi there 👋
 
-#### 🔭 I’m currently working on ...
+### 🔭 I’m currently working on ...
 
 - 2021~ [liquid simulation](https://github.com/lzpel/liquid-simulation) : Implementation of Moving-Particle Semi-Implicit Method 
 
 <img src="https://user-images.githubusercontent.com/18492524/164473888-4d1a4f02-d8a8-4b65-b9b3-3ec13cb300c4.gif" width="auto" height="200">
 
-#### 🎨 I made ... 
+### 🎨 I made ... 
 
 - 2022 [anti-adenoid-face-headgear](https://github.com/lzpel/anti-adenoid-face-headgear) : 
 
@@ -16,7 +16,7 @@
 
 ![img](https://user-images.githubusercontent.com/18492524/99069407-a4f81580-25f1-11eb-9bbe-3ec7037fe937.gif)
 
-#### 🌱 I'm learning ...
+### 🌱 I'm learning ...
 
 - 2021 [learning-gl](https://github.com/lzpel/learning-gl) : OpenGL practice
 
