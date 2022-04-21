@@ -4,7 +4,7 @@
 
 - 2021~ [liquid simulation](https://github.com/lzpel/liquid-simulation) : Implementation of Moving-Particle Semi-Implicit Method 
 
-<img src="https://github.com/lzpel/liquid-simulation/blob/master/1127_cmps/main_bucket_154s.output00021.prof.png" width="auto" height="200">
+<img src="https://user-images.githubusercontent.com/18492524/164473888-4d1a4f02-d8a8-4b65-b9b3-3ec13cb300c4.gif" width="auto" height="200">
 
 #### 🌱 I made ... 
 
