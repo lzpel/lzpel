@@ -2,7 +2,7 @@
 
 #### 🔭 I’m currently working on ...
 
-- 2021~ [liquid simulation](https://github.com/lzpel/liquid-simulation) : Moving-Particle Semi-Implicit Method 
+- 2021~ [liquid simulation](https://github.com/lzpel/liquid-simulation) : Implementation of Moving-Particle Semi-Implicit Method 
 
 <img src="https://github.com/lzpel/liquid-simulation/blob/master/1127_cmps/main_bucket_154s.output00021.prof.png" width="auto" height="200">
 
