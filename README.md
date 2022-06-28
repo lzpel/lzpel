@@ -8,7 +8,7 @@
 
 ### 🎨 I made ... 
 
-- 2021 [日経500風見鶏](https://github.com/lzpel/twitterstock) : 投資家のツイートを重回帰分析し明日の株の値動きを予測するウェブサービス
+- 2021 [日経500風見鶏](https://github.com/lzpel/twitterstock) : 投資家のツイートを重回帰分析・ベイズ推定し明日の株の値動きを予測するシステム
 - 2017 [gorogoro動画](https://github.com/lzpel/gorovideo) : A video sharring website
 
 ![img](https://user-images.githubusercontent.com/18492524/99069407-a4f81580-25f1-11eb-9bbe-3ec7037fe937.gif)
