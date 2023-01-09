@@ -2,6 +2,10 @@
 
 ### 🔭 I’m currently working on ...
 
+- 2022~ [cloudmama](https://github.com/lzpel/cloudmama)：日時に合わせて適切なアドバイスをスピーカーから再生する私的サービス
+
+<img src="https://github.com/lzpel/cloudmama/raw/main/figures/camera%20v11.png" width="auto" height="200">
+
 - 2021~ [liquid simulation](https://github.com/lzpel/liquid-simulation) : Implementation of Moving-Particle Semi-Implicit Method 
 
 <img src="https://user-images.githubusercontent.com/18492524/164473888-4d1a4f02-d8a8-4b65-b9b3-3ec13cb300c4.gif" width="auto" height="200">
