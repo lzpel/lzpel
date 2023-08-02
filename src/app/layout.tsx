@@ -1,29 +1,28 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import React from "react";
 
 //Interというフォントを使う
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'lzpel',
-  description: '備忘録',
-}
+  title: "lzpel",
+  description: "備忘録",
+};
 
 const defaultTheme = createTheme();
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <ThemeProvider theme={defaultTheme}>
-      {children}
-    </ThemeProvider>
+        <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

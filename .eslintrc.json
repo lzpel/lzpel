@@ -1,3 +1,4 @@
 {
-  "extends": ["next", "prettier"]
+  //eslint:recommended>eslint-config-next>eslint-config-prettierの順に適用される
+  "extends": ["eslint:recommended","next", "prettier"]
 }
