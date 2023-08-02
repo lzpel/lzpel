@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React from "react";
 
 //Interというフォントを使う
@@ -11,8 +10,6 @@ export const metadata: Metadata = {
   description: "備忘録",
 };
 
-const defaultTheme = createTheme();
-
 export default function RootLayout({
   children,
 }: {
@@ -20,9 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
