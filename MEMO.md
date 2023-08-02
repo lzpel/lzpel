@@ -1,0 +1,2 @@
+新機能App-Directoryはどのように使うのか
+https://eh-career.com/engineerhub/entry/2023/04/18/093000#%E6%96%B0%E6%A9%9F%E8%83%BDApp-Directory%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E4%BD%BF%E3%81%86%E3%81%AE%E3%81%8B
