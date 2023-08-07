@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Nest public
+        run: mkdir tmp && mv public/* tmp && mv tmp public/lzpel
       - name: Detect package manager
         id: detect-package-manager
         run: |
