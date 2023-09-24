@@ -8,8 +8,9 @@ const Canvas = (props: {
   const canvasElement = React.useRef<HTMLCanvasElement>(null);
   const overElement = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
-    if (!canvasElement.current && overElement.current) return;
-    props.render(canvasElement.current, overElement.current);
+    if (canvasElement.current && overElement.current) {
+      props.render(canvasElement.current, overElement.current);
+    }
   }, [props]);
   const full_style: CSSProperties = {
     top: 0,
