@@ -6,5 +6,6 @@ const nextConfig = {
     output: 'export',//for static website
     assetPrefix: urlPrefix,
     basePath: urlPrefix,
+    publicRuntimeConfig: { urlPrefix },  // https://maku.blog/p/xjjbwes/
 }
 module.exports = nextConfig
