@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 //console.log(process.env);
-const urlPrefix = process.env === "production" ? "/lzpel" : ""
+const urlPrefix = process.env.NODE_ENV === "production" ? "/lzpel" : ""
+console.log(urlPrefix)
 const nextConfig = {
     output: 'export',//for static website
     assetPrefix: urlPrefix,

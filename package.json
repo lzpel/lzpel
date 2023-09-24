@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && prettier --write src/"
+    "lint": "next lint && prettier --write src/",
+    "serve": "npx http-server out/"
   },
   "dependencies": {
     "@types/node": "20.6.4",
