@@ -10,4 +10,7 @@ smith@DESKTOP-F8JCPGN:~/lzpel$ npx create-next-app@latest
 Creating a new Next.js app in /home/smith/lzpel.
 ```
 
-add https://github.com/actions/starter-workflows/blob/main/pages/nextjs.yml
+add .github/workflows/nextjs.yml https://github.com/actions/starter-workflows/blob/main/pages/nextjs.yml
+
+一つしかパスを指定しないならカレントディレクトリに同名でシンボリックリンクが作成される
+cd public && ln -s ../items
