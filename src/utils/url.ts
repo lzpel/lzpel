@@ -17,7 +17,7 @@ import getConfig from "next/config";
  * @see https://maku.blog/p/xjjbwes
  */
 export default function url(filename: string): string {
-  const urlPrefix=getConfig().publicRuntimeConfig.urlPrefix
-  console.log(urlPrefix, urlPrefix+filename)
-  return urlPrefix+filename;
+  const urlPrefix = getConfig().publicRuntimeConfig.urlPrefix;
+  console.log(urlPrefix, urlPrefix + filename);
+  return urlPrefix + filename;
 }
