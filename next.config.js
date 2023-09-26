@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+var fs = require('fs');
 
 //console.log(process.env);
 const urlPrefix = process.env.NODE_ENV === "production" ? "/lzpel" : ""
-console.log(urlPrefix)
+const items = fs.readdirSync('items');
+console.log(items)
+
 const nextConfig = {
     output: 'export',//for static website
     assetPrefix: urlPrefix,

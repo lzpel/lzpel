@@ -18,6 +18,7 @@ const Canvas = (props: {
     bottom: 0,
     right: 0,
     position: "absolute",
+    zIndex: -1,
   };
   return (
     <div style={full_style} ref={overElement}>
