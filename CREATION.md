@@ -14,3 +14,9 @@ add .github/workflows/nextjs.yml https://github.com/actions/starter-workflows/bl
 
 一つしかパスを指定しないならカレントディレクトリに同名でシンボリックリンクが作成される
 cd public && ln -s ../items
+
+## 決定事項
+
+xs: スマホ用
+
+sm: パソコン用
