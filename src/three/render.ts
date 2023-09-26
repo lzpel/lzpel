@@ -78,10 +78,9 @@ export default function render(
   const resize = () => {
     const width = over.offsetWidth;
     const height = over.offsetHeight;
-    console.log(width, height);
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
-    renderer.setSize(width, height, false);
+    renderer.setSize(width, height);
     renderer.setPixelRatio(window.devicePixelRatio);
   };
 
