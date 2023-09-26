@@ -3,7 +3,7 @@ var fs = require('fs');
 
 //console.log(process.env);
 const urlPrefix = process.env.NODE_ENV === "production" ? "/lzpel" : ""
-const items = fs.readdirSync('items');
+const items = fs.readdirSync('note');
 console.log(items)
 
 const nextConfig = {
