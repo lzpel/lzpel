@@ -7,9 +7,9 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 
 const Layout = (props: {
-  header: React.Component;
-  main: React.Component;
-  navi: React.Component;
+  header: React.ReactNode;
+  main: React.ReactNode;
+  navi: React.ReactNode;
 }) => {
   const width = "200px";
   return (
@@ -48,7 +48,7 @@ const Layout = (props: {
     </>
   );
 };
-const BaseContainer = (props: { children: React.Component }) => {
+const BaseContainer = (props: { children: React.ReactNode }) => {
   return <Container>{props.children}</Container>;
 };
 export default Layout;
