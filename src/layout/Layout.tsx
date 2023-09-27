@@ -37,6 +37,7 @@ const Layout = (props: {
             sx={{
               display: { xs: "block" },
               flexGrow: 1,
+              minWidth: 0, //Prevent flex items from overflowing a container https://stackoverflow.com/questions/36230944/prevent-flex-items-from-overflowing-a-container
             }}
           >
             {props.main}
