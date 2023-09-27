@@ -13,7 +13,8 @@ generateStaticParamsと"use client"は共存できない
  */
 type Props = { params: { date: string } };
 const Post = (props: Props) => {
-  return <Markdown url={url(postMap[props.params.date].path)} />;
+  const data = postMap[props.params.date];
+  return <Markdown url={url(data.path)} name={data.name} />;
 };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {

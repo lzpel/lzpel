@@ -2,9 +2,9 @@
 import * as React from "react";
 import fetchUrl from "@/utils/fetchUrl";
 import ReactMarkdown from "react-markdown";
-import classes from "./markdown.module.css";
+import "./github-markdown.css";
 
-const Markdown = (props: { url: string }) => {
+const Markdown = (props: { url: string; name?: string }) => {
   const [markdown, setMarkdown] = React.useState<string>();
   React.useEffect(() => {
     fetchUrl(props.url).then(async (v) => {
@@ -13,7 +13,16 @@ const Markdown = (props: { url: string }) => {
     });
   }, [props.url]);
   return (
-    <article className={classes.Markdown}>
+    <article
+      className={"markdown-body"}
+      style={{
+        boxSizing: "border-box",
+        minWidth: "200px",
+        margin: "0 auto",
+        padding: "45px",
+      }}
+    >
+      {props.name && <h1>{props.name}</h1>}
       <ReactMarkdown className={""}>{markdown || "loading"}</ReactMarkdown>
     </article>
   );

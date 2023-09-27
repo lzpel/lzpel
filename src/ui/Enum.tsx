@@ -18,7 +18,11 @@ const EnumItem = (props: { post: Post }) => {
     return <Chip label={value} variant="outlined" key={value} />;
   });
   return (
-    <Button component={"a"} href={url("/post/" + props.post.date)}>
+    <Button
+      component={"a"}
+      href={url("/post/" + props.post.date)}
+      fullWidth={true}
+    >
       {props.post.name}
       <DateViewer date={props.post.date} />
       {tags}
