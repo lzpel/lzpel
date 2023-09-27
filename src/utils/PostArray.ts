@@ -11,5 +11,7 @@ const postArray: Post[] = path.map((v) => {
     tags: args[2].split(","),
   } as Post;
 });
-export const postMap = Object.fromEntries(postArray.map((v) => [v.date, v]));
+export const postMap: { [p: string]: Post } = Object.fromEntries<Post>(
+  postArray.map((v) => [v.date, v]),
+);
 export default postArray;
