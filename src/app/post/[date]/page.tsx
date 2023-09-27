@@ -1,7 +1,7 @@
-import post from "@/utils/post";
+import postArray, { postMap } from "@/utils/PostArray";
 import * as React from "react";
 import url from "@/utils/url";
-import Markdown from "@/app/post/[post]/Markdown";
+import Markdown from "@/app/post/[date]/Markdown";
 /*
 Markdownを副作用として読み込むため"use client"をつけたいが、
 静的サイトとして出力されるためにはurlとパスは対応させる必要があり
@@ -10,14 +10,12 @@ generateStaticParamsと"use client"は共存できない
 
 そこでサーバーサイトでレンダリングされるPostと、その内部でクライアント側でレンダリングされるMarkdownに分割して解決した
  */
-const Post = (props: { params: { post: string } }) => {
-  return (
-    <Markdown url={url("/note/20230925@最初の記事のテスト@blog,tech.md")} />
-  );
+const Post = (props: { params: { date: string } }) => {
+  return <Markdown url={url(postMap[props.params.date].path)} />;
 };
 export async function generateStaticParams() {
-  return post.map((post) => ({
-    post: post[0],
+  return postArray.map((post) => ({
+    date: post.date,
   }));
 }
 export default Post;

@@ -1,9 +1,9 @@
 import * as React from "react";
 import Enum from "@/ui/Enum";
-import post from "@/utils/post";
+import postArray from "@/utils/PostArray";
 
 const Page = (props: {}) => {
-  return <Enum item={post} />;
+  return <Enum item={postArray} />;
 };
 
 export default Page;
