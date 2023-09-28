@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -13,6 +12,7 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import Layout from "@/layout/Layout";
 import url from "@/utils/url";
+import Avatar from "@mui/material/Avatar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,26 +22,26 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout(props: { children: React.ReactNode }) {
+  //スクロールバーの幅に依存しないスタイル指定 https://qiita.com/nanocloudx/items/0efba5d35fe5a4cc7230
+  // 理屈は把握していないが100%だと読み込み後にスクロールバー分ずれる
   return (
     <html lang="jp">
-      <body className={inter.className}>
-        return{" "}
-        <Layout header={<Header />} main={props.children} navi={<Navi />} />;
+      <body className={inter.className} style={{ width: "100vw" }}>
+        <Layout main={props.children} navi={<Navi />} />;
       </body>
     </html>
   );
 }
-
-const Header = () => {
-  return (
-    <Typography variant="h6" noWrap component="a" href={url("/")}>
-      Clipped drawer
-    </Typography>
-  );
-};
 const Navi = () => {
   return (
     <Box sx={{ overflow: "auto" }}>
+      <Avatar
+        component={"a"}
+        href={url("/")}
+        sx={{ width: "100%", height: "auto" }}
+        src="https://avatars.githubusercontent.com/u/18492524"
+        alt="lzpel"
+      />
       <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
           <ListItem key={text} disablePadding>
