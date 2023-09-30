@@ -1,18 +1,19 @@
 import * as React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Box from "@mui/material/Box";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import Layout from "@/layout/Layout";
 import url from "@/utils/url";
 import Avatar from "@mui/material/Avatar";
+import Tweets from "@/ui/Tweets";
+import HomeIcon from "@mui/icons-material/Home";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { tagsMap } from "@/utils/PostArray";
+import Tags from "@/ui/Tags";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,14 +28,14 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="jp">
       <body className={inter.className} style={{ width: "100vw" }}>
-        <Layout main={props.children} navi={<Navi />} />;
+        <Layout main={props.children} navi={<Navi />} />
       </body>
     </html>
   );
 }
 const Navi = () => {
   return (
-    <Box sx={{ overflow: "auto" }}>
+    <>
       <Avatar
         component={"a"}
         href={url("/")}
@@ -43,30 +44,25 @@ const Navi = () => {
         alt="lzpel"
       />
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <HomeIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Home"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <GitHubIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Github"} />
+          </ListItemButton>
+        </ListItem>
       </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
+      <Tags tags={Object.keys(tagsMap)} />
+      <Tweets />
+    </>
   );
 };

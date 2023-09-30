@@ -14,4 +14,13 @@ const postArray: Post[] = path.map((v) => {
 export const postMap: { [p: string]: Post } = Object.fromEntries<Post>(
   postArray.map((v) => [v.date, v]),
 );
+export const tagsMap = postArray.reduce(
+  (prev, current) => {
+    current.tags.map((v) => {
+      prev[v] = (prev[v] ?? 0) + 1;
+    });
+    return prev;
+  },
+  {} as { [p: string]: number },
+);
 export default postArray;

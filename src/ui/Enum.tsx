@@ -1,8 +1,9 @@
 import Button from "@mui/material/Button";
-import Chip from "@mui/material/Chip";
 import DateViewer from "@/ui/DateViewer";
 import url from "@/utils/url";
 import Post from "@/type/Post";
+import Tags from "@/ui/Tags";
+import { Typography, Stack } from "@mui/material";
 
 const Enum = (props: { item: Post[] }) => {
   return (
@@ -14,18 +15,22 @@ const Enum = (props: { item: Post[] }) => {
   );
 };
 const EnumItem = (props: { post: Post }) => {
-  const tags = props.post.tags.map((value) => {
-    return <Chip label={value} variant="outlined" key={value} />;
-  });
   return (
     <Button
       component={"a"}
       href={url("/post/" + props.post.date)}
       fullWidth={true}
+      sx={{
+        justifyContent: "left",
+      }}
     >
-      {props.post.name}
-      <DateViewer date={props.post.date} />
-      {tags}
+      <Stack>
+        <Typography variant="subtitle2">{props.post.name}</Typography>
+        <Stack direction="row">
+          <DateViewer date={props.post.date} />
+          <Tags tags={props.post.tags} />
+        </Stack>
+      </Stack>
     </Button>
   );
 };
