@@ -5,7 +5,7 @@ import url from "@/utils/url";
 
 const Tag = (props: { name: string }) => {
   return (
-    <Link href={url(`/?key=${props.name}`)}>
+    <Link href={`/?key=${props.name}`}>
       <Chip
         label={`${props.name} (${tagsMap[props.name]})`}
         color={"warning"}

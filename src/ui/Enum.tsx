@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import Button from "@mui/material/Button";
 import DateViewer from "@/ui/DateViewer";
-import url from "@/utils/url";
 import Post from "@/type/Post";
 import Tag from "@/ui/Tag";
 import Tags from "@/ui/Tags";
@@ -42,7 +41,7 @@ const EnumItem = (props: { post: Post }) => {
       }}
     >
       <Stack>
-        <Link href={url("/post/" + props.post.date)}>
+        <Link href={`/post/${props.post.date}`}>
           <Typography variant="subtitle2" textAlign={"left"}>
             {props.post.name}
           </Typography>
