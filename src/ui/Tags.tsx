@@ -1,5 +1,5 @@
 import Chip from "@mui/material/Chip";
-import { tagsMap } from "@/utils/PostArray";
+import { tagsMap } from "@/utils/postArray";
 import Link from "next/link";
 
 const Tags = (props: { tags: string[] }) => {

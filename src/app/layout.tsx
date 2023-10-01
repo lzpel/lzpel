@@ -12,7 +12,7 @@ import Avatar from "@mui/material/Avatar";
 import Tweets from "@/ui/Tweets";
 import HomeIcon from "@mui/icons-material/Home";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { tagsMap } from "@/utils/PostArray";
+import { tagsMap } from "@/utils/postArray";
 import Tags from "@/ui/Tags";
 
 const inter = Inter({ subsets: ["latin"] });

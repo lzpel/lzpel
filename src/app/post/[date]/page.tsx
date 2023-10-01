@@ -1,4 +1,4 @@
-import postArray, { postMap } from "@/utils/PostArray";
+import postArray, { postMap } from "@/utils/postArray";
 import * as React from "react";
 import url from "@/utils/url";
 import Markdown from "@/ui/Markdown";
@@ -14,7 +14,7 @@ generateStaticParamsと"use client"は共存できない
 type Props = { params: { date: string } };
 const Post = (props: Props) => {
   const data = postMap[props.params.date];
-  return <Markdown url={url(data.path)} name={data.name} />;
+  return <Markdown url={url(`/${data.path}`)} name={data.name} />;
 };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {

@@ -1,9 +1,9 @@
-import getConfig from "next/config";
 import Post from "@/type/Post";
-const path: string[] = getConfig().publicRuntimeConfig.note;
+import publicArticle from "@/publicArticle.json";
+const path: string[] = publicArticle;
 const postArray: Post[] = path.map((v) => {
-  const filename = v.split("/")[2].split(".")[0];
-  const args = filename.split("@", 3);
+  const filename = v.split("/")[1].split(".")[0];
+  const args = filename.split("@");
   return {
     path: v,
     name: args[1],
