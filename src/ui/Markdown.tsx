@@ -2,6 +2,7 @@
 import * as React from "react";
 import fetchUrl from "@/utils/fetchUrl";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 const Markdown = (props: { url: string; name?: string }) => {
   const [markdown, setMarkdown] = React.useState<string>();
@@ -11,6 +12,10 @@ const Markdown = (props: { url: string; name?: string }) => {
       setMarkdown(text);
     });
   }, [props.url]);
-  return <ReactMarkdown className={""}>{markdown || "loading"}</ReactMarkdown>;
+  return (
+    <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+      {markdown || "loading"}
+    </ReactMarkdown>
+  );
 };
 export default Markdown;
