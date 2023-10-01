@@ -1,9 +1,9 @@
 import Post from "@/type/Post";
 import publicArticle from "@/publicArticle.json";
-const path: string[] = publicArticle;
+const path: string[] = publicArticle.reverse();
 const postArray: Post[] = path.map((v) => {
   const filename = v.split("/")[1].split(".")[0];
-  const args = filename.split("@");
+  const args = filename.split("-");
   return {
     path: v,
     name: args[1],

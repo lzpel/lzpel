@@ -1,8 +1,7 @@
 import postArray, { postMap } from "@/utils/postArray";
 import * as React from "react";
-import url from "@/utils/url";
-import Markdown from "@/ui/Markdown";
 import { Metadata } from "next";
+import Article from "@/ui/Article";
 /*
 Markdownを副作用として読み込むため"use client"をつけたいが、
 静的サイトとして出力されるためにはurlとパスは対応させる必要があり
@@ -13,8 +12,7 @@ generateStaticParamsと"use client"は共存できない
  */
 type Props = { params: { date: string } };
 const Post = (props: Props) => {
-  const data = postMap[props.params.date];
-  return <Markdown url={url(`/${data.path}`)} name={data.name} />;
+  return <Article post={postMap[props.params.date]} />;
 };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {

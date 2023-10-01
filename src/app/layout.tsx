@@ -9,9 +9,9 @@ import ListItemText from "@mui/material/ListItemText";
 import Layout from "@/layout/Layout";
 import url from "@/utils/url";
 import Avatar from "@mui/material/Avatar";
-import Tweets from "@/ui/Tweets";
 import HomeIcon from "@mui/icons-material/Home";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import { tagsMap } from "@/utils/postArray";
 import Tags from "@/ui/Tags";
 
@@ -45,7 +45,7 @@ const Navi = () => {
       />
       <List>
         <ListItem disablePadding>
-          <ListItemButton>
+          <ListItemButton href={url("/")}>
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
@@ -53,16 +53,23 @@ const Navi = () => {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton>
+          <ListItemButton href={"https://github.com/lzpel"}>
             <ListItemIcon>
               <GitHubIcon />
             </ListItemIcon>
-            <ListItemText primary={"Github"} />
+            <ListItemText primary={"@lzpel"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton href={"https://twitter.com/lzpel"}>
+            <ListItemIcon>
+              <TwitterIcon />
+            </ListItemIcon>
+            <ListItemText primary={"@lzpel"} />
           </ListItemButton>
         </ListItem>
       </List>
       <Tags tags={Object.keys(tagsMap)} />
-      <Tweets />
     </>
   );
 };

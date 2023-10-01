@@ -15,13 +15,12 @@ const find = (dir, extension) => fs.readdirSync(dir, {withFileTypes: true}).flat
 const findChildren=(dir, extension)=>find(dir, extension).map(v=>v.replace(`${dir}/`, ""))
 
 fs.writeFileSync("src/publicArticle.json", JSON.stringify(findChildren("public", ".md")))
-
 const nextConfig = {
     output: 'export',//for static website
     assetPrefix: urlPrefix,
     basePath: urlPrefix,
-    publicRuntimeConfig: {
-        urlPrefix,// https://maku.blog/p/xjjbwes/
+    env: {
+        NEXT_PUBLIC_URL_PREFIX: urlPrefix,
     },
 }
 module.exports = nextConfig

@@ -1,4 +1,3 @@
-import getConfig from "next/config";
 //https://maku.blog/p/xjjbwes/
 /**
  * public ディレクトリ以下に配置したファイルを参照するための URL を取得します。
@@ -17,7 +16,5 @@ import getConfig from "next/config";
  * @see https://maku.blog/p/xjjbwes
  */
 export default function url(filename: string): string {
-  const urlPrefix = getConfig().publicRuntimeConfig.urlPrefix;
-  console.log(urlPrefix, urlPrefix + filename);
-  return urlPrefix + filename;
+  return process.env.NEXT_PUBLIC_URL_PREFIX + filename;
 }
