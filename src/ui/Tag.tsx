@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Chip from "@mui/material/Chip";
 import { tagsMap } from "@/utils/postArray";
-import url from "@/utils/url";
 
 const Tag = (props: { name: string }) => {
   return (
