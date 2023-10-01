@@ -16,7 +16,7 @@ const Enum = () => {
   const filter = key ? (
     <>
       Filter by
-      <Tag name={key} delete={true} />
+      <Tag name={key} />
     </>
   ) : (
     <>All posts</>
