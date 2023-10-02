@@ -3,6 +3,8 @@ import * as React from "react";
 import fetchUrl from "@/utils/fetchUrl";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 const Markdown = (props: { url: string; name?: string }) => {
   const [markdown, setMarkdown] = React.useState<string>();
@@ -13,7 +15,10 @@ const Markdown = (props: { url: string; name?: string }) => {
     });
   }, [props.url]);
   return (
-    <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+    <ReactMarkdown
+      rehypePlugins={[rehypeRaw, rehypeKatex]}
+      remarkPlugins={[remarkMath]}
+    >
       {markdown || "loading"}
     </ReactMarkdown>
   );
