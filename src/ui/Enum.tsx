@@ -41,7 +41,7 @@ const EnumItem = (props: { post: Post }) => {
       }}
     >
       <Stack>
-        <Link href={`/post/${props.post.date}`}>
+        <Link href={`/${props.post.date}`}>
           <Typography variant="subtitle2" textAlign={"left"}>
             {props.post.name}
           </Typography>
