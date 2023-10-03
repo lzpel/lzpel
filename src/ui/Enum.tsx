@@ -38,6 +38,7 @@ const EnumItem = (props: { post: Post }) => {
       fullWidth={true}
       sx={{
         justifyContent: "left",
+        textTransform: "none",
       }}
     >
       <Stack>
