@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./github-markdown.css";
+import "./customize-markdown.css";
 import Post from "@/type/Post";
 import Tags from "@/ui/Tags";
 import Markdown from "@/ui/Markdown";
