@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import remarkGfm from 'remark-gfm'
 import url from "@/utils/url";
 
 const Markdown = (props: { path: string }) => {
@@ -12,7 +13,7 @@ const Markdown = (props: { path: string }) => {
   return (
     <ReactMarkdown
       rehypePlugins={[rehypeRaw, rehypeKatex]}
-      remarkPlugins={[remarkMath]}
+      remarkPlugins={[remarkGfm, remarkMath]}
       components={{
         img: (props) => {
           if (props.src && props.src.startsWith("/")) {
