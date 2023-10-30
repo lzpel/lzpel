@@ -7,10 +7,13 @@
 2. Githubでも表示できるMarkdownでブログを書く
 3. CI/CD機能を用いてgit pushでビルド＆デプロイする仕掛けを作る
 
-コンテンツの方向性としては以下のサイトを参考にしています
-- https://memo.wass80.xyz/
-
 誰も見ないかもしれませんが、日々更新する予定です。
+
+コンテンツの方向性としては時々見ているこのようなサイトを参考にしている
+
+- https://memo.wass80.xyz/
+- https://www.kmc.gr.jp/~ohai/
+- https://crossacross.org/ky/
 
 ## latex のテスト
 
