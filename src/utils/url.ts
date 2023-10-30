@@ -1,4 +1,6 @@
 //https://maku.blog/p/xjjbwes/
+import Post from "@/type/Post";
+
 /**
  * public ディレクトリ以下に配置したファイルを参照するための URL を取得します。
  *
@@ -15,7 +17,10 @@
  *
  * @see https://maku.blog/p/xjjbwes
  */
-export default function url(filename: string, abs?: boolean): string {
+export default function url(filename: string | Post, abs?: boolean): string {
+  if (typeof filename!=="string") {
+    return url("/" + filename.date, abs);
+  }
   if (abs) {
     return "https://lzpel.github.io" + url(filename);
   }

@@ -1,4 +1,3 @@
-import url from "@/utils/url";
 import { Metadata } from "next";
 
 const CustomMetadata = (title?: string, description?: string): Metadata => {
@@ -12,7 +11,7 @@ const CustomMetadata = (title?: string, description?: string): Metadata => {
     openGraph: {
       title: Title,
       description: Description,
-      images: url("/profile.jpg", true),
+      //images: url("/profile.jpg", true),
       locale: "ja_JP",
       type: "website",
     },
