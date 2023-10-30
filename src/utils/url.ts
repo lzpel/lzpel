@@ -15,6 +15,9 @@
  *
  * @see https://maku.blog/p/xjjbwes
  */
-export default function url(filename: string): string {
+export default function url(filename: string, abs?: boolean): string {
+  if (abs) {
+    return "https://lzpel.github.io" + url(filename);
+  }
   return process.env.NEXT_PUBLIC_URL_PREFIX + filename;
 }

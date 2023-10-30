@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-import remarkGfm from 'remark-gfm'
+import remarkGfm from "remark-gfm";
 import url from "@/utils/url";
 
 const Markdown = (props: { path: string }) => {
