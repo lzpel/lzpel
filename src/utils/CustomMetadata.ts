@@ -12,7 +12,7 @@ const CustomMetadata = (title?: string, description?: string): Metadata => {
     openGraph: {
       title: Title,
       description: Description,
-      url: url("/profile.jpg", true),
+      images: url("/profile.jpg", true),
       locale: "ja_JP",
       type: "website",
     },
