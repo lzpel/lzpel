@@ -1,6 +1,5 @@
-
 import { tagsMap } from "@/utils/postArray";
-import {Tag as TagEscape} from "antd";
+import { Tag as TagEscape } from "antd";
 
 const Tag = (props: { name: string }) => {
   return (

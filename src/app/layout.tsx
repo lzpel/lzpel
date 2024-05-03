@@ -5,7 +5,7 @@ import { tagsMap } from "@/utils/postArray";
 import Tags from "@/ui/Tags";
 import CustomMetadata from "@/utils/CustomMetadata";
 import { GithubOutlined, HomeOutlined } from "@ant-design/icons";
-import { Button, Image} from "antd";
+import { Button, Image } from "antd";
 
 export const metadata = CustomMetadata();
 
@@ -27,13 +27,18 @@ const Navi = () => {
         src={url("/profile.jpg")}
         alt="lzpel"
         style={{
-          borderRadius: "50%"
-        }}  
+          borderRadius: "50%",
+        }}
       />
       <Button type="text" icon={<HomeOutlined />} href={url("/")} block>
         Home
       </Button>
-      <Button type="text" icon={<GithubOutlined />} href="https://github.com/lzpel" block>
+      <Button
+        type="text"
+        icon={<GithubOutlined />}
+        href="https://github.com/lzpel"
+        block
+      >
         GitHub
       </Button>
       <Tags tags={Object.keys(tagsMap)} />

@@ -28,30 +28,26 @@ const Enum = () => {
     <>
       {filter}
       <Space direction="vertical" size={16}>
-      {items}
+        {items}
       </Space>
     </>
   );
 };
 const EnumItem = (props: { post: Post }) => {
   return (
-    
     <Card size="small">
-      
-    <Row>
-      <Col span={24}>
-    <Link href={`/${props.post.date}`}>
-    {props.post.name}
-    </Link>
-    </Col>
-    </Row>
-    <Row>
-      <Col span={24}>
-    <DateViewer date={props.post.date} />
+      <Row>
+        <Col span={24}>
+          <Link href={`/${props.post.date}`}>{props.post.name}</Link>
+        </Col>
+      </Row>
+      <Row>
+        <Col span={24}>
+          <DateViewer date={props.post.date} />
           <Tags tags={props.post.tags} />
-    </Col>
-    </Row>
-  </Card>
+        </Col>
+      </Row>
+    </Card>
   );
 };
 export default Enum;
