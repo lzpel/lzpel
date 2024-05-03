@@ -1,21 +1,12 @@
-import Link from "next/link";
-import Chip from "@mui/material/Chip";
+
 import { tagsMap } from "@/utils/postArray";
+import {Tag as TagEscape} from "antd";
 
 const Tag = (props: { name: string }) => {
   return (
-    <Link href={`/?key=${props.name}`}>
-      <Chip
-        label={`${props.name} (${tagsMap[props.name]})`}
-        color={"warning"}
-        variant="outlined"
-        size="small"
-        sx={{
-          mx: 0.3,
-          textTransform: "none",
-        }}
-      />
-    </Link>
+    <a href={`/?key=${props.name}`}>
+      <TagEscape color="magenta">{`${props.name} (${tagsMap[props.name]})`}</TagEscape>
+    </a>
   );
 };
 
