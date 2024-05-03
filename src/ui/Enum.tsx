@@ -2,13 +2,12 @@
 import * as React from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import Button from "@mui/material/Button";
 import DateViewer from "@/ui/DateViewer";
 import Post from "@/type/Post";
 import Tag from "@/ui/Tag";
 import Tags from "@/ui/Tags";
 import postArray from "@/utils/postArray";
-import { Typography, Stack } from "@mui/material";
+import { Card, Col, Row, Space } from "antd";
 
 const Enum = () => {
   const key = useSearchParams().get("key");
@@ -28,31 +27,27 @@ const Enum = () => {
   return (
     <>
       {filter}
-      {items}
+      <Space direction="vertical" size={16}>
+        {items}
+      </Space>
     </>
   );
 };
 const EnumItem = (props: { post: Post }) => {
   return (
-    <Button
-      fullWidth={true}
-      sx={{
-        justifyContent: "left",
-        textTransform: "none",
-      }}
-    >
-      <Stack>
-        <Link href={`/${props.post.date}`}>
-          <Typography variant="subtitle2" textAlign={"left"}>
-            {props.post.name}
-          </Typography>
-        </Link>
-        <Stack direction="row">
+    <Card size="small">
+      <Row>
+        <Col span={24}>
+          <Link href={`/${props.post.date}`}>{props.post.name}</Link>
+        </Col>
+      </Row>
+      <Row>
+        <Col span={24}>
           <DateViewer date={props.post.date} />
           <Tags tags={props.post.tags} />
-        </Stack>
-      </Stack>
-    </Button>
+        </Col>
+      </Row>
+    </Card>
   );
 };
 export default Enum;

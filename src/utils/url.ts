@@ -18,7 +18,7 @@ import Post from "@/type/Post";
  * @see https://maku.blog/p/xjjbwes
  */
 export default function url(filename: string | Post, abs?: boolean): string {
-  if (typeof filename!=="string") {
+  if (typeof filename !== "string") {
     return url("/" + filename.date, abs);
   }
   if (abs) {
