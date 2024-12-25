@@ -14,11 +14,13 @@ Hi there 👋
 - 2021 [日経500風見鶏](https://github.com/lzpel/twitterstock) : 投資家のツイートを重回帰分析・ベイズ推定し明日の株の値動きを予測するシステム
 
 - 2017 [gorogoro動画](https://github.com/lzpel/gorovideo) : 動画投稿サイト（投稿不可、アクセス可能）
-![img](https://user-images.githubusercontent.com/18492524/99069407-a4f81580-25f1-11eb-9bbe-3ec7037fe937.gif)
+<img src="https://user-images.githubusercontent.com/18492524/99069407-a4f81580-25f1-11eb-9bbe-3ec7037fe937.gif">
 
 
 
 ### 🎨 trivial ...
+
 - 2024 [あと何日？](https://lzpel.github.io/calendar/)：今日から選択した日付まで、あと何日かを計算します。
+
 - 2021 [learning-gl](https://github.com/lzpel/learning-gl) : OpenGL practice
-![img](https://user-images.githubusercontent.com/18492524/99470055-6d89c000-2987-11eb-97be-89c2a6906ca8.gif)
+<img src="https://user-images.githubusercontent.com/18492524/99470055-6d89c000-2987-11eb-97be-89c2a6906ca8.gif">
