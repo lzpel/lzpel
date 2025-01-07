@@ -22,5 +22,8 @@ Hi there 👋
 
 - 2024 [あと何日？](https://lzpel.github.io/calendar/)：今日から選択した日付まで、あと何日かを計算します。
 
+- 2023 [earth-border-react-three-fiber](https://lzpel.github.io/earth-border-react-three-fiber/) 3D地球をぐるぐる回せるページ。webglの練習
+<img src="https://github.com/lzpel/earth-border-react-three-fiber/blob/main/media/img.png" height="200">
+
 - 2021 [learning-gl](https://github.com/lzpel/learning-gl) : OpenGL practice
 <img src="https://user-images.githubusercontent.com/18492524/99470055-6d89c000-2987-11eb-97be-89c2a6906ca8.gif">
