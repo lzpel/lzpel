@@ -13,7 +13,7 @@ Hi there 👋
 
 - 2021 [日経500風見鶏](https://github.com/lzpel/twitterstock) : 投資家のツイートを重回帰分析・ベイズ推定し明日の株の値動きを予測するシステム
 
-- 2017 [gorogoro動画](https://github.com/lzpel/gorovideo) : 動画投稿サイト（投稿不可、アクセス可能）
+- 2017 [gorogoro動画](https://github.com/lzpel/gorovideo) : 動画投稿サイト（現在閉鎖中につき投稿不可、アクセスは可能）
 <img src="https://user-images.githubusercontent.com/18492524/99069407-a4f81580-25f1-11eb-9bbe-3ec7037fe937.gif">
 
 
