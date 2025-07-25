@@ -20,6 +20,8 @@ Hi there 👋
 
 ### 🎨 trivial ...
 
+- 2025 [engcheat](https://lzpel.github.io/engcheat/) :自分用英語勉強サイト、150の英文ニュースを繰り返し再生して暗記する、デザインは雑の極み
+
 - 2024 [あと何日？](https://lzpel.github.io/calendar/)：今日から選択した日付まで、あと何日かを計算します。
 
 - 2023 [earth-border-react-three-fiber](https://lzpel.github.io/earth-border-react-three-fiber/) 3D地球をぐるぐる回せるページ。webglの練習
