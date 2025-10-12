@@ -2,6 +2,9 @@ Hi there 👋
 
 ### 🔭 Repositories which I’m currently working on ...
 
+- 2025/10 [rebab](https://github.com/lzpel/rebab) : A tiny, rule-based reverse proxy written in Rust
+  - Ruseで書いたリバースプロキシです、docker-composeで使うとプロキシのホスト名を名前解決してくれるので便利です
+
 - 2024 [mandolin](https://github.com/lzpel/mandolin)：let's type 'cargo add mandolin', Generate Rust server trait code from OpenAPI.yaml
   - OpenAPI定義からRustのサーバーコードを出力するプリプロセスライブラリ
   
