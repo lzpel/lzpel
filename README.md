@@ -2,7 +2,7 @@ Hi there 👋
 
 ### 🔭 Repositories which I’m currently working on ...
 
-- 2026 Feb [lambda360view](https://github.com/lzpel/lambda360view)
+- 2026 Feb [lambda360view](https://github.com/lzpel/lambda360view) : A React component library for displaying 3D CAD-like models with edge rendering
   - Live Demo: https://lzpel.github.io/lambda360view/
   - <img src="https://lzpel.github.io/lambda360view/screenshot.png" width="auto" height="200">
 - 2025 Oct [rebab](https://github.com/lzpel/rebab) : A tiny, rule-based reverse proxy written in Rust
