@@ -1,7 +1,7 @@
 Hi there 👋
 
 ### 🔭 Repositories which I’m currently working on ...
-- 2026 March [chijin](https://github.com/lzpel/chijin) : Minimal Rust bindings for OpenCASCADE (OCC 7.9).
+- 2026 March [cadrum](https://github.com/lzpel/cadrum) (The old name chijin renamed) : Minimal Rust bindings for OpenCASCADE (OCC 7.9).
   - <img src="https://github.com/lzpel/chijin/raw/HEAD/figure/chijin.svg" width="auto" height="200">
 - 2026 Feb [lambda360view](https://github.com/lzpel/lambda360view) : A React component library for displaying 3D CAD-like models with edge rendering
   - Live Demo: https://lzpel.github.io/lambda360view/
