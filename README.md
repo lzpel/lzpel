@@ -1,7 +1,7 @@
 Hi there 👋
 
 ### 🔭 Repositories which I’m currently working on ...
-- 2026 April [cadrum](https://github.com/lzpel/alphastell) : A stellarator design tool written in Rust.
+- 2026 April [alphastell](https://github.com/lzpel/alphastell) : A stellarator design tool written in Rust.
   - <img src="https://github.com/lzpel/alphastell/raw/HEAD/figure/image.png" width="auto" height="200">
 - 2026 March [cadrum](https://github.com/lzpel/cadrum) (The old name chijin renamed) : Minimal Rust bindings for OpenCASCADE (OCC 8.0.0-rc5).
   - <img src="https://github.com/lzpel/chijin/raw/HEAD/figure/chijin.svg" width="auto" height="200">
