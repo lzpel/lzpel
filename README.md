@@ -1,6 +1,8 @@
 Hi there 👋
 
 ### 🔭 Repositories which I’m currently working on ...
+- 2026 April [cadrum](https://github.com/lzpel/alphastell) : A stellarator design tool written in Rust.
+  - <img src="https://github.com/lzpel/alphastell/raw/HEAD/figure/image.svg" width="auto" height="200">
 - 2026 March [cadrum](https://github.com/lzpel/cadrum) (The old name chijin renamed) : Minimal Rust bindings for OpenCASCADE (OCC 8.0.0-rc5).
   - <img src="https://github.com/lzpel/chijin/raw/HEAD/figure/chijin.svg" width="auto" height="200">
 - 2026 Feb [lambda360view](https://github.com/lzpel/lambda360view) : A React component library for displaying 3D CAD-like models with edge rendering
