@@ -1,17 +1,20 @@
 Hi there 👋
 
 ### 🔭 Repositories which I’m currently working on ...
+
 - 2026 July [openmc-pypi](https://github.com/lzpel/openmc-pypi) : OpenMC with pypi conpatible wheel (under developping). 
 - 2026 April [alphastell](https://github.com/lzpel/alphastell) : A stellarator design tool written in Rust.
   - <img src="https://github.com/lzpel/alphastell/raw/HEAD/figure/image.png" width="auto" height="200">
 - 2026 March [cadrum](https://github.com/lzpel/cadrum) Rust CAD library powered by statically linked, headless OpenCASCADE (OCCT 8.0.0) — runs natively and in the browser via WebAssembly.
   - <img src="https://lzpel.github.io/cadrum/00_chijin.png" width="auto" height="200">
+
+### ✅ Repositories completed ...
+
 - 2026 Feb [lambda360view](https://github.com/lzpel/lambda360view) : A React component library for displaying 3D CAD-like models with edge rendering
   - Live Demo: https://lzpel.github.io/lambda360view/
   - <img src="https://lzpel.github.io/lambda360view/screenshot.png" width="auto" height="200">
 - 2025 Oct [rebab](https://github.com/lzpel/rebab) : A tiny, rule-based reverse proxy written in Rust
   - Rustで書いたリバースプロキシです、docker-composeで使うとプロキシのホスト名を名前解決してくれるので便利です
-
 - 2024 [mandolin](https://github.com/lzpel/mandolin)：let's type 'cargo add mandolin', Generate Rust server trait code from OpenAPI.yaml
   - OpenAPI定義からRustのサーバーコードを出力するプリプロセスライブラリ
   
@@ -25,8 +28,6 @@ Hi there 👋
 
 - 2017 [gorogoro動画](https://github.com/lzpel/gorovideo) : 動画投稿サイト（現在閉鎖中につき投稿不可、アクセスは可能）
 <img src="https://user-images.githubusercontent.com/18492524/99069407-a4f81580-25f1-11eb-9bbe-3ec7037fe937.gif">
-
-
 
 ### 🎨 trivial ...
 
