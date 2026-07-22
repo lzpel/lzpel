@@ -1,6 +1,7 @@
 Hi there 👋
 
 ### 🔭 Repositories which I’m currently working on ...
+- 2026 July [openmc-pypi](https://github.com/lzpel/openmc-pypi) : OpenMC with pypi conpatible wheel (under developping). 
 - 2026 April [alphastell](https://github.com/lzpel/alphastell) : A stellarator design tool written in Rust.
   - <img src="https://github.com/lzpel/alphastell/raw/HEAD/figure/image.png" width="auto" height="200">
 - 2026 March [cadrum](https://github.com/lzpel/cadrum) Rust CAD library powered by statically linked, headless OpenCASCADE (OCCT 8.0.0) — runs natively and in the browser via WebAssembly.
