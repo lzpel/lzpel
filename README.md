@@ -1,4 +1,6 @@
-Hi there 👋
+<!--It's strange when you think about it - how billions of us share this planet, yet most of us will never cross paths or even know each other existed. And -->if you're reading this right now... this might be the first and last moment our lives ever touch.
+
+But still, for this tiny moment in time, our worlds have quietly met. <!--And I genuinely hope you're doing okay, wherever you are. -->👋
 
 ### 🔭 Repositories which I’m currently working on ...
 
