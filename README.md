@@ -4,7 +4,7 @@ But still, for this tiny moment in time, our worlds have quietly met. <!--And I 
 
 ### 🔭 Repositories which I’m currently working on ...
 
-- 2026 July [openmc-anywhere](https://github.com/lzpel/openmc-anywhere) : OpenMC with pypi conpatible windows/linux/mac wheel (under developping). 
+- 2026 July [openmc-anywhere](https://github.com/lzpel/openmc-anywhere) : OpenMC with pypi conpatible windows/linux/mac wheel. 
 - 2026 April [alphastell](https://github.com/lzpel/alphastell) : A stellarator design tool written in Rust.
   - <img src="https://github.com/lzpel/alphastell/raw/HEAD/figure/image.png" width="auto" height="200">
 - 2026 March [cadrum](https://github.com/lzpel/cadrum) Rust CAD library powered by statically linked, headless OpenCASCADE (OCCT 8.0.0) — runs natively and in the browser via WebAssembly.
@@ -32,6 +32,8 @@ But still, for this tiny moment in time, our worlds have quietly met. <!--And I 
 <img src="https://user-images.githubusercontent.com/18492524/99069407-a4f81580-25f1-11eb-9bbe-3ec7037fe937.gif">
 
 ### 🎨 trivial ...
+
+- 2026 [mygravit(fork)](https://github.com/lzpel/gravit-designer) https://lzpel.github.io/gravit-designer/ 自分用画像編集ツール
 
 - 2025 [engcheat](https://lzpel.github.io/engcheat/) :自分用英語勉強サイト、150の英文ニュースを繰り返し再生して暗記する、デザインは雑の極み
 
