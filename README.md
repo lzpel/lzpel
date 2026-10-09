@@ -8,7 +8,7 @@ But still, for this tiny moment in time, our worlds have quietly met. <!--And I 
 - 2026 April [alphastell](https://github.com/lzpel/alphastell) : A stellarator design tool written in Rust.
   - <img src="https://github.com/lzpel/alphastell/raw/HEAD/figure/image.png" width="auto" height="200">
 - 2026 March [cadrum](https://github.com/lzpel/cadrum) Rust CAD library powered by statically linked, headless OpenCASCADE (OCCT 8.0.0) — runs natively and in the browser via WebAssembly.
-  - <img src="https://lzpel.github.io/cadrum/00_chijin.png" width="auto" height="200">
+  - <img src="https://lzpel.github.io/cadrum/100_chijin.png" width="auto" height="200">
 
 ### ✅ Repositories completed ...
 
